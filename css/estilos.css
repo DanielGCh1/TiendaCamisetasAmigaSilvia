@@ -1,0 +1,216 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /* 1rem = 10px */
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, a, p {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+.boton {
+    display: block;
+    background-color:  rgba(34, 32, 32, 0.2);
+    border: .2rem solid #000000;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-size: 2rem;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+
+/* Grid */
+@media (min-width: 768px) {
+    .columnas-2 {
+        flex: 0 0 calc(16.6% - 1rem);
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+/* Header */
+img {
+    max-width: 100%;
+}
+.logoNavegacion {
+    padding-top: 2rem;
+    text-align: center;
+}
+.logoNavegacion a img {
+    max-width: 90%;
+}
+@media (min-width: 768px) {
+    .logoNavegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoNavegacion a {
+        max-width: 20rem;
+    }
+    .logoNavegacion a img {
+        max-width: 100%;
+    }
+}
+.sitio-header {
+    background-image: url(../img/sunset-2355758_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+.texto-header {
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 3rem;
+}.texto-header h1 {
+    padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .texto-header {
+        margin-top: 15rem;
+    }
+}
+
+/* Navegacion */
+.navegacion a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+.navegacion a:hover {
+    color: rgb(70, 221, 28);
+    transition: .3s ease-in-out;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 1rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+/*Contenido Principal*/
+.contenedor h3 {
+    text-align: center;
+}
+.lista-productos {
+    padding: 0 3rem;
+    list-style: none;
+}
+@media (min-width: 768px) {
+    .lista-productos {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .lista-productos li {
+        padding: 0 1rem;
+    }
+}
+.lista-productos li img {
+    border: 1rem solid rgba(34, 32, 32, 0.205);
+    transition: border-color .3s ease-in-out;
+}
+.lista-productos li img:hover {
+    border: 1rem solid rgba(0, 0, 0, 0.774);
+}
+.lista-productos li p {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+}
+span, .precio {
+    color: #299a0b;
+    font-size: 4rem;
+}
+.ver-todas {
+    margin-left: 5rem; 
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.sitio-footer {
+/*    background-color: #000000;
+    background-image: url(../img/paraElFooter.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+    * Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: rgb(69,72,77); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+    
+}
